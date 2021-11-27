@@ -1,9 +1,8 @@
-from django.db.models import Model
 from rest_framework import serializers
 from .models import Persona
 
 
 class PersonaSerializers(serializers.ModelSerializer):
     class Meta:
-        Model = Persona
+        model = Persona
         fields = '__all__'

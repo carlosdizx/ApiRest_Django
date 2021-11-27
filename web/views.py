@@ -9,4 +9,4 @@ from .serializers import PersonaSerializers
 
 class PersonaViewsets(viewsets.ModelViewSet):
     queryset = Persona.objects.all()
-    serializers_class = PersonaSerializers
+    serializer_class = PersonaSerializers
